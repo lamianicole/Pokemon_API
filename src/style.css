@@ -1,0 +1,290 @@
+:root {
+  --pokemonLightRed: #ff0000;
+  --pokemonDarkRed: #cc0000;
+  --pokemonBlue: #3b4cca;
+  --pokemonYellow: #ffde00;
+  --pokemonDarkYellow: #b3a125;
+}
+
+html {
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 1rem 1rem 0 1rem;
+  margin: 0 auto;
+  gap: 2rem;
+  background-image: url(./img/pikachu.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url(./img/pixelart.jpg);
+  background-size: contain;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: inset 0px 0px 10px 10px #fff;
+}
+
+h1,
+h2 {
+  color: var(--pokemonYellow);
+  letter-spacing: 10px;
+  -webkit-text-stroke: 2px var(--pokemonBlue);
+  text-shadow: 1px 1px black;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  font-family: "pokemon_classic";
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.ppl {
+  width: 7rem;
+}
+
+.pplbox {
+  flex-direction: row;
+}
+
+button {
+  padding: 0.4rem;
+  border-radius: 10px;
+  border: none;
+  font-family: "pokemon_classic";
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  box-shadow: 3px 3px rgb(50, 50, 50);
+  transition: 0.3s;
+}
+
+button:nth-of-type(1):hover {
+  background-color: #3bb900;
+  color: #fff;
+}
+
+button:nth-of-type(2):hover {
+  background-color: #00458a;
+  color: #fff;
+}
+
+button:nth-of-type(3):hover {
+  background-color: #ffe600;
+  color: #00458a;
+}
+
+button:nth-of-type(4):hover {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+button:nth-of-type(5):hover {
+  background-color: #ffc2f9;
+  color: #fff;
+}
+
+button:nth-of-type(6):hover {
+  background-color: #5a1e64;
+  color: #fff;
+}
+
+button:nth-of-type(7):hover {
+  background-color: #e40000;
+  color: #fff;
+}
+
+button:nth-of-type(8):hover {
+  background-color: #57921c;
+  color: #fff;
+}
+
+button:nth-of-type(9):hover {
+  background-color: #ff9900;
+  color: #fff;
+}
+
+button:nth-of-type(10):hover {
+  background-color: #965a00;
+  color: #fff;
+}
+
+button:nth-of-type(11):hover {
+  background-color: #ccdadd;
+  color: #fff;
+}
+
+button:nth-of-type(12):hover {
+  background-color: #6ad2ff;
+  color: #fff;
+}
+
+button:nth-of-type(13):hover {
+  background-color: #b3b3b3;
+  color: #fff;
+}
+
+button:nth-of-type(14):hover {
+  background-color: #e1b237;
+  color: #fff;
+}
+
+button:nth-of-type(15):hover {
+  background-color: #2a4950;
+  color: #fff;
+}
+
+button:nth-of-type(16):hover {
+  background-color: #ab00ae;
+  color: #fff;
+}
+
+button:nth-of-type(17):hover {
+  background-color: #ff81f2;
+  color: #fff;
+}
+
+button:nth-of-type(18):hover {
+  background-color: #00a0e4;
+  color: #fff;
+}
+
+.sectionInput {
+  gap: 2rem;
+}
+
+#buttonsWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%; 
+  max-width: 100rem;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+input {
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 5px solid var(--pokemonLightRed);
+  font-family: "pokemon_classic";
+  box-shadow: 5px 5px rgb(50, 50, 50);
+  font-size: 1rem;
+}
+
+.cardDiv {
+  border: 4px solid black;
+  border-radius: 1rem;
+  width: 16rem;
+  height: 18rem;
+  padding: 0.8rem;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 222, 0, 1) 7%,
+    rgba(255, 255, 255, 1) 62%,
+    #fff 8%
+  );
+  box-shadow: 5px 5px rgb(113, 113, 113);
+}
+
+.cardId {
+  font-size: 0.8rem;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.cardName {
+  font-size: 1.2rem;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.singleCardType {
+  width: 100%;
+}
+
+.cardType {
+  width: 100%;
+  margin-top: 10px;
+  border: 2px solid #3b4cca;
+  background-color: #dbdbdf;
+  color: black;
+  border-radius: 10px;
+  padding: 0.4rem;
+  box-shadow: 4px 4px rgb(99, 98, 98);
+}
+
+#cardsWrapper {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 100rem; 
+  margin-top: 6rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.pokedex {
+  background-image: url(../src/img/Pokedex.png);
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  background-size: cover;
+  width: 100%;
+  max-width: 50rem;
+  height: 39rem;
+  position: relative;
+}
+
+.pokedex :nth-child(1) {
+  position: absolute;
+  top: 17rem;
+  right: 33rem;
+}
+
+.pokedexCardId {
+  position: absolute;
+  top: 14.2rem;
+  right: 13rem;
+  color: white;
+}
+
+.pokedexCardName {
+  position: absolute;
+  top: 13.5rem;
+  right: 34.5rem;
+  font-size: 1rem;
+  color: black;
+}
+
+.pokedexType {
+  color: #fff;
+  position: relative;
+  top: -1.5rem;
+  right: -47rem;
+}
+
